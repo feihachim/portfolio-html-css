@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+}
+
+header {
+  margin-top: 40px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+}
+
+header section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+nav:first-child {
+  color: #4756df;
+}
+
+nav {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 10px;
+}
+
+main {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+}
+
+#about {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about_section {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20%;
+}
+
+.about_section img {
+  width: 80%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #4756df;
+}
+
+a:hover {
+  text-decoration: underline red;
+  text-decoration-thickness: 1px;
+  color: red;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills div {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px 15px;
+}
+
+#skills img {
+  width: 30%;
+  height: auto;
+  border: 10px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-listing {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+}
+
+.project-listing div {
+  width: 30%;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-listing img {
+  width: 90%;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+}
+
+footer {
+}
+
+.about_link {
+  margin-left: auto;
+}
