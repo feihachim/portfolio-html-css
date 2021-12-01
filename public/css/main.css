@@ -147,7 +147,7 @@ a:hover {
   gap: 20px 20px;
 }
 
-.project-listing div {
+.project-element {
   width: 30%;
   border: 1px solid white;
   border-radius: 10px;
@@ -157,10 +157,17 @@ a:hover {
   align-items: center;
   justify-content: center;
   row-gap: 15px;
+  padding: 20px;
 }
 
-.project-element {
-  padding: 20px;
+.paragraph {
+  width: 80%;
+  aspect-ratio: 16/9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  box-shadow: 0 0 0 transparent;
 }
 
 .project-listing img {
@@ -212,6 +219,11 @@ input {
   height: 40px;
 }
 
+input,
+textarea {
+  border: 0;
+}
+
 input[type="submit"] {
   font-weight: bold;
   background-color: white;
@@ -255,14 +267,4 @@ label {
 
 .about_link {
   margin-left: auto;
-}
-
-.project-listing .paragraph {
-  width: 80%;
-  aspect-ratio: 16/9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0;
-  box-shadow: 0 0 0 transparent;
 }
