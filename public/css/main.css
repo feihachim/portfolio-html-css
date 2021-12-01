@@ -26,7 +26,7 @@ header {
   row-gap: 40px;
 }
 
-header section {
+#home-section {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@ header section {
   padding: 40px;
 }
 
-header img {
+#home-section img {
   width: 90%;
   height: auto;
 }
@@ -55,12 +55,17 @@ nav:first-child {
 }
 
 nav {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   column-gap: 10px;
   font-weight: bold;
+  height: 80px;
+  background-color: white;
+  position: sticky;
+  padding: 0 7% 0 7%;
+  top: 0;
 }
 
 main {
