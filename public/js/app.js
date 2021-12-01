@@ -2,49 +2,51 @@ const portfolio = [
   {
     name: "Testimonials Grid",
     screenshot: "./public/images/Testimonials-Grid-Section-Main.png",
-    description: "",
+    description:
+      "Recueil de témoignages d'anciens étudiants en informatique représenté sous forme de grille.",
     code: "https://github.com/feihachim/testimonials-grid",
     website: "https://feihachim-testimonials-grid.netlify.app/",
   },
   {
     name: "Calculatrice",
     screenshot: "./public/images/Javascript-calculator.png",
-    description: "",
+    description:
+      "Calculatrice qui effectue les 4 opérations sur les nombres entiers et décimaux. Projet réalisé avec Reactjs et Redux.",
     code: "https://github.com/feihachim/calculator-redux",
     website: "https://feihachim-freecodecamp-calculator.netlify.app/",
   },
   {
     name: "Falsebook",
     screenshot: "./public/images/Falsebook.png",
-    description: "",
+    description: "Prototype du site de facebook.",
     code: "https://github.com/feihachim/afpa-falsebook",
     website: "https://feihachim.github.io/afpa-falsebook/",
   },
   {
     name: "NFT Preview Card",
     screenshot: "./public/images/NFT-Preview-Card-Component-Main.png",
-    description: "",
+    description: "Prévisualisation d'une carte NFT avec overlay de l'image.",
     code: "https://github.com/feihachim/nft-preview-card",
     website: "https://feihachim-nft-card.netlify.app/",
   },
   {
     name: "Digital Studio",
     screenshot: "./public/images/Digital-Studio.png",
-    description: "",
+    description: "Page d'une plateforme fictive de services en informatique.",
     code: "https://github.com/feihachim/afpa-digital-studio",
     website: "https://feihachim.github.io/afpa-digital-studio/",
   },
   {
     name: "Product Announcement",
     screenshot: "./public/images/Product-Announcement.png",
-    description: "",
+    description: "Page vitrine d'un annoncement d'un produit fictif.",
     code: "https://github.com/feihachim/afpa-product-announcement",
     website: "https://feihachim.github.io/afpa-product-announcement/",
   },
   {
     name: "Ours",
     screenshot: "./public/images/Ours.png",
-    description: "",
+    description: "Tête d'animal réalisé en CSS et HTML.",
     code: "https://github.com/feihachim/afpa-ours-html-css",
     website: "https://feihachim.github.io/afpa-ours-html-css/",
   },
@@ -66,7 +68,8 @@ function createImage(element) {
 }
 
 function createParagraph(element) {
-  const paragraph = document.createElement("p");
+  const paragraph = document.createElement("div");
+  paragraph.classList.add("paragraph");
   paragraph.textContent = element.description;
   return paragraph;
 }
@@ -85,13 +88,24 @@ function createLinkSite(element) {
   return link;
 }
 
+function createUl(element) {
+  const ul = document.createElement("ul");
+  const liCode = document.createElement("li");
+  const liSite = document.createElement("li");
+  liCode.appendChild(createLinkCode(element));
+  liSite.appendChild(createLinkSite(element));
+  ul.appendChild(liCode);
+  ul.appendChild(liSite);
+  return ul;
+}
+
 function createProject(element) {
   const project = document.createElement("div");
+  project.classList.add("project-element");
   project.appendChild(createHeadingThree(element));
   project.appendChild(createImage(element));
   project.appendChild(createParagraph(element));
-  project.appendChild(createLinkCode(element));
-  project.appendChild(createLinkSite(element));
+  project.appendChild(createUl(element));
   return project;
 }
 
