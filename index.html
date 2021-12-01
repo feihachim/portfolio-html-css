@@ -66,10 +66,55 @@
       <footer>
         <section id="contact">
           <h2>Contactez-moi</h2>
-          <form action=""></form>
+          <form
+            name="contactForm"
+            action="mailto:feihachim@yahoo.fr"
+            method="get"
+            enctype="text/plain"
+          >
+            <div class="form-control">
+              <label for="name-form">Nom</label>
+              <input
+                type="text"
+                name="nameInput"
+                id="name-form"
+                placeholder="Entrez votre nom"
+              />
+            </div>
+            <div class="form-control">
+              <label for="email-form">Adresse mail</label>
+              <input
+                type="email"
+                name="emailInput"
+                id="email-form"
+                placeholder="Entrez votre adresse mail"
+              />
+            </div>
+            <div class="form-control">
+              <label for="message-form">Message</label>
+              <textarea
+                name="messageTextarea"
+                id="message-form"
+                cols="30"
+                rows="10"
+                placeholder="Entrez votre message"
+              ></textarea>
+            </div>
+            <input type="submit" value="Envoyer" />
+          </form>
         </section>
-        <section></section>
-        <section>
+        <section id="social-icons">
+          <a href="https://github.com/feihachim">
+            <img src="./public/icons/github.png" alt="Github" />
+          </a>
+          <a href="https://www.linkedin.com/in/hachimyoussoufa/">
+            <img src="./public/icons/logo-linkedin.png" alt="Linkedin" />
+          </a>
+          <a href="#">
+            <img src="./public/icons/cv.png" alt="CV" />
+          </a>
+        </section>
+        <section id="attribution">
           <div>
             Icons made by
             <a href="https://www.flaticon.com/authors/itim2101" title="itim2101"
@@ -79,6 +124,10 @@
             <a href="https://www.flaticon.com/" title="Flaticon"
               >www.flaticon.com</a
             >
+          </div>
+          <div>
+            Website inspired from
+            <a href="https://twitter/koladechris">Kolade Chris (KSound)</a>
           </div>
         </section>
       </footer>

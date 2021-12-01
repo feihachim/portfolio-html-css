@@ -9,16 +9,18 @@
 
 .container {
   width: 100vw;
+  max-width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 50px;
+  overflow-x: hidden;
 }
 
 header {
   margin-top: 40px;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,13 +28,16 @@ header {
 }
 
 header section {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 40px;
 }
 
 header img {
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
@@ -58,7 +63,7 @@ nav {
 }
 
 main {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,6 +74,7 @@ main {
   width: 90%;
   display: flex;
   flex-direction: column;
+  row-gap: 20px;
 }
 
 .about_section {
@@ -96,14 +102,18 @@ a:hover {
 }
 
 #skills {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: whitesmoke;
+  padding: 40px;
+  row-gap: 20px;
 }
 
 #skills div {
-  width: 60%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,19 +124,21 @@ a:hover {
 #skills img {
   width: 30%;
   height: auto;
-  border: 10px solid white;
+  border: 30px solid white;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
 #projects {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 20px;
 }
 
 .project-listing {
-  width: 80%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -151,6 +163,76 @@ a:hover {
 }
 
 footer {
+  width: 100%;
+}
+
+#contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 40px;
+  row-gap: 20px;
+}
+
+form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  background-color: white;
+  border: 2px solid white;
+  box-shadow: 0 0 5px #ccc;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+input {
+  font-size: 1.1rem;
+  height: 40px;
+}
+
+input[type="submit"] {
+  font-weight: bold;
+  background-color: white;
+}
+
+input[type="submit"]:hover {
+  background-color: #4756df;
+}
+
+input,
+textarea {
+  outline: 2px solid #4756df;
+  border-radius: 5px;
+}
+
+label {
+  color: #4756df;
+  font-weight: bold;
+}
+
+#social-icons {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  padding: 30px;
+}
+
+#attribution {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 20px;
 }
 
 .about_link {

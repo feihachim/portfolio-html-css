@@ -1,4 +1,4 @@
-const Portfolio = [
+const portfolio = [
   {
     name: "Testimonials Grid",
     screenshot: "./public/images/Testimonials-Grid-Section-Main.png",
@@ -101,4 +101,4 @@ function createListProjects(projects, element) {
   });
 }
 
-createListProjects(Portfolio, projectSection);
+createListProjects(portfolio, projectSection);
