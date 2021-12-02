@@ -54,6 +54,9 @@ const portfolio = [
 
 const projectSection = document.querySelector(".project-listing");
 const skillsSection = document.querySelector("#skills div");
+const menuLabel = document.querySelector(".about_link__menu");
+const closeLabel = document.querySelector(".about_link__close");
+const menuList = document.querySelector(".about_link ul");
 
 function createHeadingThree(element) {
   const heading = document.createElement("h3");
@@ -117,3 +120,15 @@ function createListProjects(projects, element) {
 }
 
 createListProjects(portfolio, projectSection);
+
+menuLabel.addEventListener("click", (event) => {
+  closeLabel.style.display = "block";
+  menuLabel.style.display = "none";
+  menuList.style.display = "flex";
+});
+
+closeLabel.addEventListener("click", (event) => {
+  menuLabel.style.display = "block";
+  closeLabel.style.display = "none";
+  menuList.style.display = "none";
+});
