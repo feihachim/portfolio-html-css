@@ -297,14 +297,15 @@ label {
   cursor: pointer;
 }
 
-.about_link__close {
-  background-color: black;
-}
-
 @media (max-width: 991px) {
 }
 
 @media (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
   .about_section {
     flex-direction: column;
   }
@@ -343,17 +344,21 @@ label {
     width: 100%;
   }
 
-  /*.about_link {
-    display: flex;
-    flex-direction: column;
-  }*/
-
   .about_link__menu {
     display: block;
   }
+  .about_link {
+    width: 100%;
+  }
+
+  .about_link label {
+    text-align: center;
+  }
 
   .about_link ul {
+    width: 100%;
     display: none;
     flex-direction: column;
+    align-items: center;
   }
 }

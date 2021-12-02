@@ -120,6 +120,17 @@ function createListProjects(projects, element) {
 }
 
 createListProjects(portfolio, projectSection);
+function redimension() {
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    closeLabel.style.display = "none";
+    menuLabel.style.display = "none";
+    menuList.style.display = "flex";
+  } else {
+    closeLabel.style.display = "none";
+    menuLabel.style.display = "block";
+    menuList.style.display = "none";
+  }
+}
 
 menuLabel.addEventListener("click", (event) => {
   closeLabel.style.display = "block";
@@ -132,3 +143,5 @@ closeLabel.addEventListener("click", (event) => {
   closeLabel.style.display = "none";
   menuList.style.display = "none";
 });
+
+window.addEventListener("resize", redimension, false);
