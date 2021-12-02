@@ -53,6 +53,7 @@ const portfolio = [
 ];
 
 const projectSection = document.querySelector(".project-listing");
+const skillsSection = document.querySelector("#skills div");
 
 function createHeadingThree(element) {
   const heading = document.createElement("h3");

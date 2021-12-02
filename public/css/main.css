@@ -96,8 +96,13 @@ main {
 }
 
 .about_section img {
-  width: 80%;
+  width: 50%;
   height: auto;
+}
+
+.about_section div {
+  width: 50%;
+  padding: 10%;
 }
 
 a {
