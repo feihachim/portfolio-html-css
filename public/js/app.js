@@ -119,7 +119,6 @@ function createListProjects(projects, element) {
   });
 }
 
-createListProjects(portfolio, projectSection);
 function redimension() {
   if (window.matchMedia("(min-width: 768px)").matches) {
     closeLabel.style.display = "none";
@@ -131,6 +130,8 @@ function redimension() {
     menuList.style.display = "none";
   }
 }
+
+createListProjects(portfolio, projectSection);
 
 menuLabel.addEventListener("click", (event) => {
   closeLabel.style.display = "block";
