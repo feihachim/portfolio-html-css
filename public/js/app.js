@@ -1,62 +1,4 @@
-const portfolio = [
-  {
-    name: "Testimonials Grid",
-    screenshot: "./public/images/Testimonials-Grid-Section-Main.png",
-    description:
-      "Recueil de témoignages d'anciens étudiants en informatique représenté sous forme de grille.",
-    code: "https://github.com/feihachim/testimonials-grid",
-    website: "https://feihachim-testimonials-grid.netlify.app/",
-  },
-  {
-    name: "Calculatrice",
-    screenshot: "./public/images/Javascript-calculator.png",
-    description:
-      "Calculatrice qui effectue les 4 opérations sur les nombres entiers et décimaux. Projet réalisé avec Reactjs et Redux.",
-    code: "https://github.com/feihachim/calculator-redux",
-    website: "https://feihachim-freecodecamp-calculator.netlify.app/",
-  },
-  {
-    name: "Falsebook",
-    screenshot: "./public/images/Falsebook.png",
-    description: "Prototype du site de facebook.",
-    code: "https://github.com/feihachim/afpa-falsebook",
-    website: "https://feihachim.github.io/afpa-falsebook/",
-  },
-  {
-    name: "NFT Preview Card",
-    screenshot: "./public/images/NFT-Preview-Card-Component-Main.png",
-    description: "Prévisualisation d'une carte NFT avec overlay de l'image.",
-    code: "https://github.com/feihachim/nft-preview-card",
-    website: "https://feihachim-nft-card.netlify.app/",
-  },
-  {
-    name: "Digital Studio",
-    screenshot: "./public/images/Digital-Studio.png",
-    description: "Page d'une plateforme fictive de services en informatique.",
-    code: "https://github.com/feihachim/afpa-digital-studio",
-    website: "https://feihachim.github.io/afpa-digital-studio/",
-  },
-  {
-    name: "Product Announcement",
-    screenshot: "./public/images/Product-Announcement.png",
-    description: "Page vitrine d'un annoncement d'un produit fictif.",
-    code: "https://github.com/feihachim/afpa-product-announcement",
-    website: "https://feihachim.github.io/afpa-product-announcement/",
-  },
-  {
-    name: "Ours",
-    screenshot: "./public/images/Ours.png",
-    description: "Tête d'animal réalisé en CSS et HTML.",
-    code: "https://github.com/feihachim/afpa-ours-html-css",
-    website: "https://feihachim.github.io/afpa-ours-html-css/",
-  },
-];
-
-const projectSection = document.querySelector(".project-listing");
-const skillsSection = document.querySelector("#skills div");
-const menuLabel = document.querySelector(".about_link__menu");
-const closeLabel = document.querySelector(".about_link__close");
-const menuList = document.querySelector(".about_link ul");
+"use strict";
 
 function createHeadingThree(element) {
   const heading = document.createElement("h3");
@@ -113,10 +55,35 @@ function createProject(element) {
   return project;
 }
 
+function createSkill(element) {
+  const skill = createImage(element);
+  return skill;
+}
+
+function createSocialLink(element) {
+  const socialLink = document.createElement("a");
+  const socialLinkImage = createImage(element);
+  socialLink.setAttribute("href", element.link);
+  socialLink.appendChild(socialLinkImage);
+  return socialLink;
+}
+
 function createListProjects(projects, element) {
   projects.forEach((item) => {
     element.appendChild(createProject(item));
   });
+}
+
+function createListSkills(skills, element) {
+  skills.forEach(item => {
+    element.appendChild(createSkill(item));
+  })
+}
+
+function createListSocialLinks(socialLinks, element) {
+  socialLinks.forEach(item => {
+    element.appendChild(createSocialLink(item));
+  })
 }
 
 function redimension() {
@@ -131,7 +98,51 @@ function redimension() {
   }
 }
 
-createListProjects(portfolio, projectSection);
+function displaySkills(file, section, callback) {
+  let xhr = new XMLHttpRequest();
+  xhr.responseType = 'json';
+  xhr.open('GET', file);
+  xhr.onload = function () {
+    let response = xhr.response;
+    callback(response.skills, section);
+  };
+  xhr.send(null);
+}
+
+function displayProjects(file, section, callback) {
+  let xhr = new XMLHttpRequest();
+  xhr.responseType = 'json';
+  xhr.open('GET', file);
+  xhr.onload = function () {
+    let response = xhr.response;
+    callback(response.projects, section);
+  };
+  xhr.send(null);
+}
+
+function displaySocialLinks(file, section, callback) {
+  let xhr = new XMLHttpRequest();
+  xhr.responseType = 'json';
+  xhr.open('GET', file);
+  xhr.onload = function () {
+    let response = xhr.response;
+    callback(response.socialLinks, section);
+  };
+  xhr.send(null);
+}
+
+const projectSection = document.querySelector(".project-listing");
+const skillsSection = document.querySelector("#skills div");
+const socialLinksSection = document.querySelector("#social-icons");
+const menuLabel = document.querySelector(".about_link__menu");
+const closeLabel = document.querySelector(".about_link__close");
+const menuList = document.querySelector(".about_link ul");
+
+window.addEventListener('load', event => {
+  displaySkills("./public/data/data.json", skillsSection, createListSkills);
+  displayProjects("./public/data/data.json", projectSection, createListProjects);
+  displaySocialLinks("./public/data/data.json", socialLinksSection, createListSocialLinks);
+});
 
 menuLabel.addEventListener("click", (event) => {
   closeLabel.style.display = "block";

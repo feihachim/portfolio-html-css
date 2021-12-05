@@ -1,0 +1,96 @@
+{
+    "skills":[
+       {
+          "name":"HTML5",
+          "screenshot":"./public/icons/html-5.png"
+       },
+       {
+          "name":"CSS3",
+          "screenshot":"./public/icons/css-3.png"
+       },
+       {
+          "name":"Javascript",
+          "screenshot":"./public/icons/javascript.png"
+       },
+       {
+          "name":"Nodejs",
+          "screenshot":"./public/icons/nodejs.png"
+       },
+       {
+          "name":"Reactjs",
+          "screenshot":"./public/icons/physics.png"
+       },
+       {
+          "name":"Git",
+          "screenshot":"./public/icons/git.png"
+       }
+    ],
+    "projects":[
+       {
+          "name":"Testimonials Grid",
+          "screenshot":"./public/images/Testimonials-Grid-Section-Main.png",
+          "description":"Recueil de témoignages d'anciens étudiants en informatique représenté sous forme de grille.",
+          "code":"https://github.com/feihachim/testimonials-grid",
+          "website":"https://feihachim-testimonials-grid.netlify.app/"
+       },
+       {
+          "name":"Calculatrice",
+          "screenshot":"./public/images/Javascript-calculator.png",
+          "description":"Calculatrice qui effectue les 4 opérations sur les nombres entiers et décimaux. Projet réalisé avec Reactjs et Redux.",
+          "code":"https://github.com/feihachim/calculator-redux",
+          "website":"https://feihachim-freecodecamp-calculator.netlify.app/"
+       },
+       {
+          "name":"Falsebook",
+          "screenshot":"./public/images/Falsebook.png",
+          "description":"Prototype du site de facebook.",
+          "code":"https://github.com/feihachim/afpa-falsebook",
+          "website":"https://feihachim.github.io/afpa-falsebook/"
+       },
+       {
+          "name":"NFT Preview Card",
+          "screenshot":"./public/images/NFT-Preview-Card-Component-Main.png",
+          "description":"Prévisualisation d'une carte NFT avec overlay de l'image.",
+          "code":"https://github.com/feihachim/nft-preview-card",
+          "website":"https://feihachim-nft-card.netlify.app/"
+       },
+       {
+          "name":"Digital Studio",
+          "screenshot":"./public/images/Digital-Studio.png",
+          "description":"Page d'une plateforme fictive de services en informatique.",
+          "code":"https://github.com/feihachim/afpa-digital-studio",
+          "website":"https://feihachim.github.io/afpa-digital-studio/"
+       },
+       {
+          "name":"Product Announcement",
+          "screenshot":"./public/images/Product-Announcement.png",
+          "description":"Page vitrine d'un annoncement d'un produit fictif.",
+          "code":"https://github.com/feihachim/afpa-product-announcement",
+          "website":"https://feihachim.github.io/afpa-product-announcement/"
+       },
+       {
+          "name":"Ours",
+          "screenshot":"./public/images/Ours.png",
+          "description":"Tête d'animal réalisé en CSS et HTML.",
+          "code":"https://github.com/feihachim/afpa-ours-html-css",
+          "website":"https://feihachim.github.io/afpa-ours-html-css/"
+       }
+    ],
+    "socialLinks":[
+       {
+          "name":"Github",
+          "screenshot":"./public/icons/logo-github.png",
+          "link":"https://github.com/feihachim"
+       },
+       {
+          "name":"Linkedin",
+          "screenshot":"./public/icons/linkedin.png",
+          "link":"https://www.linkedin.com/in/hachimyoussoufa/"
+       },
+       {
+          "name":"CV",
+          "screenshot":"./public/icons/cv.png",
+          "link":"https://github.com/feihachim/doc-afpa-dump/blob/main/CV_draft.pdf"
+       }
+    ]
+ }
