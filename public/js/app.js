@@ -75,33 +75,21 @@ function createListProjects(projects, element) {
 }
 
 function createListSkills(skills, element) {
-  skills.forEach(item => {
+  skills.forEach((item) => {
     element.appendChild(createSkill(item));
-  })
+  });
 }
 
 function createListSocialLinks(socialLinks, element) {
-  socialLinks.forEach(item => {
+  socialLinks.forEach((item) => {
     element.appendChild(createSocialLink(item));
-  })
-}
-
-function redimension() {
-  if (window.matchMedia("(min-width: 768px)").matches) {
-    closeLabel.style.display = "none";
-    menuLabel.style.display = "none";
-    menuList.style.display = "flex";
-  } else {
-    closeLabel.style.display = "none";
-    menuLabel.style.display = "block";
-    menuList.style.display = "none";
-  }
+  });
 }
 
 function displaySkills(file, section, callback) {
   let xhr = new XMLHttpRequest();
-  xhr.responseType = 'json';
-  xhr.open('GET', file);
+  xhr.responseType = "json";
+  xhr.open("GET", file);
   xhr.onload = function () {
     let response = xhr.response;
     callback(response.skills, section);
@@ -111,8 +99,8 @@ function displaySkills(file, section, callback) {
 
 function displayProjects(file, section, callback) {
   let xhr = new XMLHttpRequest();
-  xhr.responseType = 'json';
-  xhr.open('GET', file);
+  xhr.responseType = "json";
+  xhr.open("GET", file);
   xhr.onload = function () {
     let response = xhr.response;
     callback(response.projects, section);
@@ -122,8 +110,8 @@ function displayProjects(file, section, callback) {
 
 function displaySocialLinks(file, section, callback) {
   let xhr = new XMLHttpRequest();
-  xhr.responseType = 'json';
-  xhr.open('GET', file);
+  xhr.responseType = "json";
+  xhr.open("GET", file);
   xhr.onload = function () {
     let response = xhr.response;
     callback(response.socialLinks, section);
@@ -138,10 +126,18 @@ const menuLabel = document.querySelector(".about_link__menu");
 const closeLabel = document.querySelector(".about_link__close");
 const menuList = document.querySelector(".about_link ul");
 
-window.addEventListener('load', event => {
+window.addEventListener("load", (event) => {
   displaySkills("./public/data/data.json", skillsSection, createListSkills);
-  displayProjects("./public/data/data.json", projectSection, createListProjects);
-  displaySocialLinks("./public/data/data.json", socialLinksSection, createListSocialLinks);
+  displayProjects(
+    "./public/data/data.json",
+    projectSection,
+    createListProjects
+  );
+  displaySocialLinks(
+    "./public/data/data.json",
+    socialLinksSection,
+    createListSocialLinks
+  );
 });
 
 menuLabel.addEventListener("click", (event) => {
@@ -151,9 +147,19 @@ menuLabel.addEventListener("click", (event) => {
 });
 
 closeLabel.addEventListener("click", (event) => {
-  menuLabel.style.display = "block";
   closeLabel.style.display = "none";
+  menuLabel.style.display = "block";
   menuList.style.display = "none";
 });
 
-window.addEventListener("resize", redimension, false);
+window.addEventListener("resize", (event) => {
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    closeLabel.style.display = "none";
+    menuLabel.style.display = "none";
+    menuList.style.display = "flex";
+  } else {
+    closeLabel.style.display = "none";
+    menuLabel.style.display = "block";
+    menuList.style.display = "none";
+  }
+});

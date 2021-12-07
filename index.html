@@ -1,106 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./public/icons/programming-code-signs.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <script src="./public/js/app.js" defer></script>
+    <title>Portfolio Hachim Youssoufa</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./public/icons/programming-code-signs.png" type="image/png" />
-  <link rel="stylesheet" href="./public/css/main.css" />
-  <script src="./public/js/app.js" defer></script>
-  <title>Portfolio Hachim Youssoufa</title>
-</head>
-
-<body>
-  <div class="container">
-    <nav>
-      <li>Hachim Youssoufa</li>
-      <li class="about_link">
-        <label class="about_link__menu"><img src="./public/icons/menu.png" alt="menu icon" /></label>
-        <label class="about_link__close"><img src="./public/icons/close.png" alt="menu close" /></label>
-        <ul>
-          <li><a href="#about">Présentation</a></li>
-          <li><a href="#skills">Compétences</a></li>
-          <li><a href="#projects">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </li>
-    </nav>
-    <section id="home-section">
-      <h1>Développeur web/web mobile</h1>
-      <img src="./public/images/code-gc7571b117_1920.jpg" alt="Code" />
-    </section>
-    <main>
-      <section id="about">
-        <h2>A Propos de moi</h2>
-        <div class="about_section">
-          <img src="./public/images/programmer.png" alt="Programmer" />
+  <body>
+    <div class="container">
+      <nav>
+        <li>Hachim Youssoufa</li>
+        <li class="about_link">
+          <label class="about_link__menu"
+            ><img src="./public/icons/menu.png" alt="menu icon"
+          /></label>
+          <label class="about_link__close"
+            ><img src="./public/icons/close.png" alt="menu close"
+          /></label>
+          <ul>
+            <li><a href="#about">Présentation</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </li>
+      </nav>
+      <section id="home-section">
+        <h1>Développeur web/web mobile</h1>
+        <img src="./public/images/code-gc7571b117_1920.jpg" alt="Code" />
+      </section>
+      <main>
+        <section id="about">
+          <h2>A Propos de moi</h2>
+          <div class="about_section">
+            <img src="./public/images/programmer.png" alt="Programmer" />
+            <div>
+              Je m'appelle Hachim Youssoufa et suis passionné d'informatique et
+              des nouvelles technologies. Je suis actuellement en formation en
+              tant que développeur web spécialisé en PHP/MySQL coté back-end et
+              avec une appétence pour Reactjs coté front-end.J'aime la
+              programmation et suis prêt à relever les défis que l'on
+              m'assignera.
+            </div>
+          </div>
+        </section>
+        <section id="skills">
+          <h2>Mes compétences</h2>
+          <div></div>
+        </section>
+        <section id="projects">
+          <h2>Mon portfolio</h2>
+          <div class="project-listing"></div>
+        </section>
+      </main>
+      <footer>
+        <section id="contact">
+          <h2>Contactez-moi</h2>
+          <form name="contactForm" action="/" method="get" enctype="text/plain">
+            <div class="form-control">
+              <label for="name-form">Nom</label>
+              <input
+                type="text"
+                name="nameInput"
+                id="name-form"
+                placeholder="Entrez votre nom"
+              />
+            </div>
+            <div class="form-control">
+              <label for="email-form">Adresse mail</label>
+              <input
+                type="email"
+                name="emailInput"
+                id="email-form"
+                placeholder="Entrez votre adresse mail"
+              />
+            </div>
+            <div class="form-control">
+              <label for="message-form">Message</label>
+              <textarea
+                name="messageTextarea"
+                id="message-form"
+                cols="30"
+                rows="10"
+                placeholder="Entrez votre message"
+              ></textarea>
+            </div>
+            <input type="submit" value="Envoyer" />
+          </form>
+        </section>
+        <section id="social-icons"></section>
+        <section id="attribution">
           <div>
-            Je m'appelle Hachim Youssoufa et suis passionné d'informatique et
-            des nouvelles technologies. Je suis actuellement en formation en
-            tant que développeur web spécialisé en PHP/MySQL coté back-end et
-            avec une appétence pour Reactjs coté front-end.J'aime la
-            programmation et suis prêt à relever les défis que l'on
-            m'assignera.
+            Icônes conçues par
+            <a href="https://www.flaticon.com/authors/itim2101" title="itim2101"
+              >itim2101</a
+            >,
+            <a
+              href="https://www.flaticon.com/fr/auteurs/dave-gandy"
+              title="Dave Gandy"
+              >Dave Gandy</a
+            >
+            , <a href="https://www.freepik.com" title="Freepik">Freepik</a>,
+            <a
+              href="https://www.flaticon.com/fr/auteurs/pixel-perfect"
+              title="Pixel perfect"
+              >Pixel perfect</a
+            >
+            et
+            <a
+              href="https://www.flaticon.com/authors/bingge-liu"
+              title="Bingge Liu"
+              >Bingge Liu</a
+            >
+            de
+            <a href="https://www.flaticon.com/" title="Flaticon"
+              >www.flaticon.com</a
+            >
           </div>
-        </div>
-      </section>
-      <section id="skills">
-        <h2>Mes compétences</h2>
-        <div>
-        </div>
-      </section>
-      <section id="projects">
-        <h2>Mon portfolio</h2>
-        <div class="project-listing"></div>
-      </section>
-    </main>
-    <footer>
-      <section id="contact">
-        <h2>Contactez-moi</h2>
-        <form name="contactForm" action="mailto:feihachim@yahoo.fr" method="get" enctype="text/plain">
-          <div class="form-control">
-            <label for="name-form">Nom</label>
-            <input type="text" name="nameInput" id="name-form" placeholder="Entrez votre nom" />
-          </div>
-          <div class="form-control">
-            <label for="email-form">Adresse mail</label>
-            <input type="email" name="emailInput" id="email-form" placeholder="Entrez votre adresse mail" />
-          </div>
-          <div class="form-control">
-            <label for="message-form">Message</label>
-            <textarea name="messageTextarea" id="message-form" cols="30" rows="10"
-              placeholder="Entrez votre message"></textarea>
-          </div>
-          <input type="submit" value="Envoyer" />
-        </form>
-      </section>
-      <section id="social-icons">
-      </section>
-      <section id="attribution">
-        <div>
-          Icônes conçues par
-          <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a>,
-          <a href="https://www.flaticon.com/fr/auteurs/dave-gandy" title="Dave Gandy">Dave Gandy</a>
-          , <a href="https://www.freepik.com" title="Freepik">Freepik</a>,
-          <a href="https://www.flaticon.com/fr/auteurs/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
-          et
-          <a href="https://www.flaticon.com/authors/bingge-liu" title="Bingge Liu">Bingge Liu</a>
-          de
-          <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-        </div>
-        <!--<div>
+          <!--<div>
             <a href="https://icons8.com/icon/78295/symfony">Symfony icon by Icons8</a>
           </div>-->
-        <div>
-          Inspiré de
-          <a href="https://eager-williams-af0d00.netlify.app/?">ce site</a>
-          conçu par
-          <a href="https://twitter/koladechris">Kolade Chris (KSound)</a>
-        </div>
-      </section>
-    </footer>
-  </div>
-</body>
-
+          <div>
+            Inspiré de
+            <a href="https://eager-williams-af0d00.netlify.app/?">ce site</a>
+            conçu par
+            <a href="https://twitter/koladechris">Kolade Chris (KSound)</a>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
 </html>
