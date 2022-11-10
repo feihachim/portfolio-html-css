@@ -1,94 +1,3 @@
-const skill= [
-  {
-    name:"HTML5",
-    screenshot:"html-5.png"
-  },
-  {
-    name:"CSS3",
-    screenshot:"css-3.png"
-  },
-  {
-    name:"Javascript",
-    screenshot:"javascript.png"
-  },
-  {
-    name:"React",
-    screenshot:"physics.png"
-  },
-  {
-    name:"Nodejs",
-    screenshot:"nodejs.png"
-  },
-  {
-    name:"Git",
-    screenshot:"git.png"
-  }
-];
-
-const portfolio = [
-  {
-    name: "Testimonials Grid",
-    screenshot: "Testimonials-Grid-Section-Main.png",
-    description:
-      "Recueil de témoignages d'anciens étudiants en informatique représenté sous forme de grille.",
-    code: "https://github.com/feihachim/testimonials-grid",
-    website: "https://feihachim-testimonials-grid.netlify.app/",
-  },
-  {
-    name: "Calculatrice",
-    screenshot: "Javascript-calculator.png",
-    description:
-      "Calculatrice qui effectue les 4 opérations sur les nombres entiers et décimaux. Projet réalisé avec Reactjs et Redux.",
-    code: "https://github.com/feihachim/calculator-redux",
-    website: "https://feihachim-freecodecamp-calculator.netlify.app/",
-  },
-  {
-    name: "Falsebook",
-    screenshot: "Falsebook.png",
-    description: "Prototype du site de facebook.",
-    code: "https://github.com/feihachim/afpa-falsebook",
-    website: "https://feihachim.github.io/afpa-falsebook/",
-  },
-  {
-    name: "NFT Preview Card",
-    screenshot: "NFT-Preview-Card-Component-Main.png",
-    description: "Prévisualisation d'une carte NFT avec overlay de l'image.",
-    code: "https://github.com/feihachim/nft-preview-card",
-    website: "https://feihachim-nft-card.netlify.app/",
-  },
-  {
-    name: "Digital Studio",
-    screenshot: "Digital-Studio.png",
-    description: "Page d'une plateforme fictive de services en informatique.",
-    code: "https://github.com/feihachim/afpa-digital-studio",
-    website: "https://feihachim.github.io/afpa-digital-studio/",
-  },
-  {
-    name: "Product Announcement",
-    screenshot: "Product-Announcement.png",
-    description: "Page vitrine d'un annoncement d'un produit fictif.",
-    code: "https://github.com/feihachim/afpa-product-announcement",
-    website: "https://feihachim.github.io/afpa-product-announcement/",
-  },
-  {
-    name: "Ours",
-    screenshot: "Ours.png",
-    description: "Tête d'animal réalisé en CSS et HTML.",
-    code: "https://github.com/feihachim/afpa-ours-html-css",
-    website: "https://feihachim.github.io/afpa-ours-html-css/",
-  },
-];
-
-const imagesFolder="./public/images";
-const iconsFolder="./public/icons";
-
-const projectSection = document.querySelector(".project-listing");
-const skillsSection = document.querySelector("#skills div");
-const skillsListing = document.querySelector(".skill-listing");
-const menuLabel = document.querySelector(".about_link__menu");
-const closeLabel = document.querySelector(".about_link__close");
-const menuList = document.querySelector(".about_link ul");
-
 function createHeadingThree(element) {
   const heading = document.createElement("h3");
   heading.textContent = element.name;
@@ -169,12 +78,36 @@ function redimension() {
   }
 }
 
-window.addEventListener("load", (event) => {
-  createListSkills(skill,skillsListing);
-  createListProjects(portfolio, projectSection);
-});
+const imagesFolder = "./public/images";
+const iconsFolder = "./public/icons";
+let data;
 
+const projectSection = document.querySelector(".project-listing");
+const skillsSection = document.querySelector("#skills div");
+const skillsListing = document.querySelector(".skill-listing");
+const menuLabel = document.querySelector(".about_link__menu");
+const closeLabel = document.querySelector(".about_link__close");
+const menuList = document.querySelector(".about_link ul");
 
+let xhr = new XMLHttpRequest();
+xhr.open("GET",'./public/data/data.json');
+xhr.responseType = 'json';
+xhr.send();
+
+xhr.onload = function(){
+  if(xhr.status != 200){
+    alert(`Error ${xhr.status}:${xhr.statusText}`);
+  }
+  else{
+    data = xhr.response;
+    createListSkills(data.skills,skillsListing);
+    createListProjects(data.projects, projectSection);
+  }
+};
+
+xhr.onerror = function(){
+  alert('Request fauled!');
+};
 
 menuLabel.addEventListener("click", (event) => {
   closeLabel.style.display = "block";

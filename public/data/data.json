@@ -25,7 +25,7 @@
         "screenshot":"git.png"
       }
     ],
-    "portfolio":[
+    "projects":[
         {
           "name": "Testimonials Grid",
           "screenshot": "Testimonials-Grid-Section-Main.png",
