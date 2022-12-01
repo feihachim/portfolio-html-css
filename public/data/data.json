@@ -38,9 +38,9 @@
           "name": "Calculatrice",
           "screenshot": "Javascript-calculator.png",
           "description":
-            "Calculatrice qui effectue les 4 opérations sur les nombres entiers et décimaux. Projet réalisé avec Reactjs et Redux.",
-          "code": "https://github.com/feihachim/calculator-redux",
-          "website": "https://feihachim-freecodecamp-calculator.netlify.app/"
+            "Calculatrice qui effectue les 4 opérations sur les nombres entiers et décimaux. Projet réalisé avec Reactjs et hooks.",
+          "code": "https://github.com/feihachim/calculator-reducer",
+          "website": "https://feihachim.github.io/calculator-reducer/"
         },
         {
           "name": "Falsebook",
@@ -69,13 +69,6 @@
           "description": "Page vitrine d'un annoncement d'un produit fictif.",
           "code": "https://github.com/feihachim/afpa-product-announcement",
           "website": "https://feihachim.github.io/afpa-product-announcement/"
-        },
-        {
-          "name": "Ours",
-          "screenshot": "Ours.png",
-          "description": "Tête d'animal réalisé en CSS et HTML.",
-          "code": "https://github.com/feihachim/afpa-ours-html-css",
-          "website": "https://feihachim.github.io/afpa-ours-html-css/"
         }
       ]
 }

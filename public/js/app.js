@@ -1,3 +1,5 @@
+"use strict";
+
 function createHeadingThree(element) {
   const heading = document.createElement("h3");
   heading.textContent = element.name;
@@ -23,6 +25,7 @@ function createLinkCode(element) {
   const link = document.createElement("a");
   link.textContent = "Code Source";
   link.setAttribute("href", element.code);
+  link.setAttribute("target","_blank");
   return link;
 }
 
@@ -30,6 +33,7 @@ function createLinkSite(element) {
   const link = document.createElement("a");
   link.textContent = "Site web";
   link.setAttribute("href", element.website);
+  link.setAttribute("target","_blank");
   return link;
 }
 
