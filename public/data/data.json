@@ -26,6 +26,13 @@
       }
     ],
     "projects":[
+      {
+        "name":"Horloge pomodoro",
+        "screenshot":"pomodoro-reducer.png",
+        "description":"Horloge qui alterne entre session de travail et pauses",
+        "code":"https://github.com/feihachim/pomodoro-reducer-v1",
+        "website":"https://feihachim.github.io/pomodoro-reducer-v1/"
+      },
         {
           "name": "Testimonials Grid",
           "screenshot": "Testimonials-Grid-Section-Main.png",
