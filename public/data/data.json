@@ -27,6 +27,13 @@
     ],
     "projects":[
       {
+        "name":"GPT-3 Landing page",
+        "screenshot":"Screenshot 2023-01-30 at 11-45-40 GPT-3 Landing page.png",
+        "description":"Landing page de GPT3 basé sur un template figma",
+        "code":"https://github.com/feihachim/gpt3-jsm",
+        "website":"https://gpt3-feihachim.netlify.app/"
+      },
+      {
         "name":"Horloge pomodoro",
         "screenshot":"pomodoro-reducer.png",
         "description":"Horloge qui alterne entre session de travail et pauses",
