@@ -1,88 +1,93 @@
 {
-    "skills":[
-      {
-        "name":"HTML5",
-        "screenshot":"html-5.png"
-      },
-      {
-        "name":"CSS3",
-        "screenshot":"css-3.png"
-      },
-      {
-        "name":"Javascript",
-        "screenshot":"javascript.png"
-      },
-      {
-        "name":"React",
-        "screenshot":"physics.png"
-      },
-      {
-        "name":"Nodejs",
-        "screenshot":"nodejs.png"
-      },
-      {
-        "name":"Git",
-        "screenshot":"git.png"
-      }
-    ],
-    "projects":[
-      {
-        "name":"GPT-3 Landing page",
-        "screenshot":"Screenshot 2023-01-30 at 11-45-40 GPT-3 Landing page.png",
-        "description":"Landing page de GPT3 basé sur un template figma",
-        "code":"https://github.com/feihachim/gpt3-jsm",
-        "website":"https://gpt3-feihachim.netlify.app/"
-      },
-      {
-        "name":"Horloge pomodoro",
-        "screenshot":"pomodoro-reducer.png",
-        "description":"Horloge qui alterne entre session de travail et pauses",
-        "code":"https://github.com/feihachim/pomodoro-reducer-v1",
-        "website":"https://feihachim.github.io/pomodoro-reducer-v1/"
-      },
-        {
-          "name": "Testimonials Grid",
-          "screenshot": "Testimonials-Grid-Section-Main.png",
-          "description":
-            "Recueil de témoignages d'anciens étudiants en informatique représenté sous forme de grille.",
-          "code": "https://github.com/feihachim/testimonials-grid",
-          "website": "https://feihachim-testimonials-grid.netlify.app/"
-        },
-        {
-          "name": "Calculatrice",
-          "screenshot": "Javascript-calculator.png",
-          "description":
-            "Calculatrice qui effectue les 4 opérations sur les nombres entiers et décimaux. Projet réalisé avec Reactjs et hooks.",
-          "code": "https://github.com/feihachim/calculator-reducer",
-          "website": "https://feihachim.github.io/calculator-reducer/"
-        },
-        {
-          "name": "Falsebook",
-          "screenshot": "Falsebook.png",
-          "description": "Prototype du site de facebook.",
-          "code": "https://github.com/feihachim/afpa-falsebook",
-          "website": "https://feihachim.github.io/afpa-falsebook/"
-        },
-        {
-          "name": "NFT Preview Card",
-          "screenshot": "NFT-Preview-Card-Component-Main.png",
-          "description": "Prévisualisation d'une carte NFT avec overlay de l'image.",
-          "code": "https://github.com/feihachim/nft-preview-card",
-          "website": "https://feihachim-nft-card.netlify.app/"
-        },
-        {
-          "name": "Digital Studio",
-          "screenshot": "Digital-Studio.png",
-          "description": "Page d'une plateforme fictive de services en informatique.",
-          "code": "https://github.com/feihachim/afpa-digital-studio",
-          "website": "https://feihachim.github.io/afpa-digital-studio/"
-        },
-        {
-          "name": "Product Announcement",
-          "screenshot": "Product-Announcement.png",
-          "description": "Page vitrine d'un annoncement d'un produit fictif.",
-          "code": "https://github.com/feihachim/afpa-product-announcement",
-          "website": "https://feihachim.github.io/afpa-product-announcement/"
-        }
-      ]
+  "skills": [
+    {
+      "name": "HTML5",
+      "screenshot": "html-5.png"
+    },
+    {
+      "name": "CSS3",
+      "screenshot": "css-3.png"
+    },
+    {
+      "name": "Javascript",
+      "screenshot": "javascript.png"
+    },
+    {
+      "name": "React",
+      "screenshot": "physics.png"
+    },
+    {
+      "name": "Nodejs",
+      "screenshot": "nodejs.png"
+    },
+    {
+      "name": "Git",
+      "screenshot": "git.png"
+    }
+  ],
+  "projects": [
+    {
+      "name": "feihachim media",
+      "screenshot": "Screenshot 2023-02-16 at 22-06-16 feihachim Media.png",
+      "description": "Clone de youtube utilisant l'API youtube en",
+      "code": "https://github.com/feihachim/youtube_clone",
+      "website": "https://feihachim-media.netlify.app/"
+    },
+    {
+      "name": "GPT-3 Landing page",
+      "screenshot": "Screenshot 2023-01-30 at 11-45-40 GPT-3 Landing page.png",
+      "description": "Landing page de GPT3 basé sur un template figma",
+      "code": "https://github.com/feihachim/gpt3-jsm",
+      "website": "https://gpt3-feihachim.netlify.app/"
+    },
+    {
+      "name": "Horloge pomodoro",
+      "screenshot": "pomodoro-reducer.png",
+      "description": "Horloge qui alterne entre session de travail et pauses",
+      "code": "https://github.com/feihachim/pomodoro-reducer-v1",
+      "website": "https://feihachim.github.io/pomodoro-reducer-v1/"
+    },
+    {
+      "name": "Testimonials Grid",
+      "screenshot": "Testimonials-Grid-Section-Main.png",
+      "description": "Recueil de témoignages d'anciens étudiants en informatique représenté sous forme de grille.",
+      "code": "https://github.com/feihachim/testimonials-grid",
+      "website": "https://feihachim-testimonials-grid.netlify.app/"
+    },
+    {
+      "name": "Calculatrice",
+      "screenshot": "Javascript-calculator.png",
+      "description": "Calculatrice qui effectue les 4 opérations sur les nombres entiers et décimaux. Projet réalisé avec Reactjs et hooks.",
+      "code": "https://github.com/feihachim/calculator-reducer",
+      "website": "https://feihachim.github.io/calculator-reducer/"
+    },
+    {
+      "name": "Falsebook",
+      "screenshot": "Falsebook.png",
+      "description": "Prototype du site de facebook.",
+      "code": "https://github.com/feihachim/afpa-falsebook",
+      "website": "https://feihachim.github.io/afpa-falsebook/"
+    },
+    {
+      "name": "NFT Preview Card",
+      "screenshot": "NFT-Preview-Card-Component-Main.png",
+      "description": "Prévisualisation d'une carte NFT avec overlay de l'image.",
+      "code": "https://github.com/feihachim/nft-preview-card",
+      "website": "https://feihachim-nft-card.netlify.app/"
+    },
+    {
+      "name": "Digital Studio",
+      "screenshot": "Digital-Studio.png",
+      "description": "Page d'une plateforme fictive de services en informatique.",
+      "code": "https://github.com/feihachim/afpa-digital-studio",
+      "website": "https://feihachim.github.io/afpa-digital-studio/"
+    },
+    {
+      "name": "Product Announcement",
+      "screenshot": "Product-Announcement.png",
+      "description": "Page vitrine d'un annoncement d'un produit fictif.",
+      "code": "https://github.com/feihachim/afpa-product-announcement",
+      "website": "https://feihachim.github.io/afpa-product-announcement/"
+    }
+  ]
 }
