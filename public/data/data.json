@@ -29,7 +29,7 @@
     {
       "name": "feihachim media",
       "screenshot": "Screenshot 2023-02-16 at 22-06-16 feihachim Media.png",
-      "description": "Clone de youtube utilisant l'API youtube en",
+      "description": "Clone de youtube utilisant l'API youtube réalisé avec reactjs et un proxy api",
       "code": "https://github.com/feihachim/youtube_clone",
       "website": "https://feihachim-media.netlify.app/"
     },
